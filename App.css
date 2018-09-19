@@ -1,0 +1,52 @@
+.App-header {
+  background-color: #222;
+  height: 100px;
+  padding: 10px;
+  color: white;
+  font-family: avenir;
+  font-size: 2em;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+  margin: 0%;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.menu-and-content-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.menu-bar-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-content: flex-start;
+}
+
+.menu-bar{
+  height: 3em;
+  width: 10em;
+  margin: .5em;
+  text-align: center;
+  font-size: 1em;
+  background-color: #222;
+  font-family: Avenir;
+  color: white;
+}
+
+.menu-bar:hover {
+  transform: translate(2px, 2px);
+}
+
+.merch-container {
+  display: flex;
+  flex-direction: column;
+ width: 100%;
+ text-align: center;
+}
