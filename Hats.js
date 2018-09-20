@@ -1,10 +1,12 @@
 import React from 'react';
-import Cart from "./Cart.js";
+import { connect } from 'react-redux';
 
-let addToCart = (post) => {
+let addToCart = (post, dispatch) => {
     let clickedProduct = post;
+    dispatch({ type: 'ADD_TO_CART', item: clickedProduct });
     console.log(clickedProduct);
 }
+
 class Hats extends React.Component {
     constructor(props) {
         super(props);
@@ -32,11 +34,13 @@ render(){
                 <img src={post.imageURL}/>
                 <h4>${post.price}</h4>
                 <button type="submit"
-                onClick ={()=>addToCart(post)}>Add to Cart</button>
+                onClick ={()=>addToCart(post, this.props.dispatch)}>Add to Cart</button>
                 
               
             </div>)}
         </div>
     }
 };
-export default Hats;      
+let ConnectedHats = connect()(Hats);
+export default ConnectedHats; 
+     

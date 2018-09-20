@@ -10,11 +10,6 @@ import Pants from "./Pants.js";
 import Sox from "./Sox.js";
 import Cart from "./Cart.js";
 
-class CartState extends React.Component{
-  
-}
-
-
 
 const App = () => (
 <div>
