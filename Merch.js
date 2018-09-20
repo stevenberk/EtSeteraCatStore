@@ -1,6 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-export default class Merch extends React.Component {
+class Merch extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,7 +21,7 @@ export default class Merch extends React.Component {
                     "description":"Even Sherlock Holmes needed a purr or two.",
                     "price":50,
                     "imageURL":"https://images.unsplash.com/photo-1467839024528-ac3042ac0ae7",
-                    "categoryId":"1"
+                    "categoryId":"2"
                     //bootz
                 },
                 {
@@ -38,7 +39,7 @@ export default class Merch extends React.Component {
                     "description":"Fool, no man can kill me. But a cat might.",
                     "price":300,
                     "imageURL":"https://images.unsplash.com/photo-1512218168353-4bba6ac5f543",
-                    "categoryId":"2"
+                    "categoryId":"4"
                     //pants
                 }
             ]
@@ -47,14 +48,15 @@ export default class Merch extends React.Component {
 
 render(){
    return<div> {this.state.myArray.map(post =>
-            <div>
+            <div className="merch-container">
                 <h2>{post.title}</h2>
                 <h4>{post.description}</h4>
-                <h4>{post.price}</h4>
+                <img src={post.imageURL}/>
+                <h4>${post.price}</h4>
                 
               
             </div>)}
         </div>
     }
 };
-        
+export default Merch;

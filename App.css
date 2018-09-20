@@ -47,6 +47,14 @@
 .merch-container {
   display: flex;
   flex-direction: column;
- width: 100%;
- text-align: center;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+  border: 2px solid;
+ 
 }
