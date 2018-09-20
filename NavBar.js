@@ -8,24 +8,29 @@ class NavBar extends React.Component {
             MerchArray : [
                 {
                     "title": "All",
-                    "route": "/all"
+                    "route": "/all",
+                    "key": 1
                 }
                 ,
                 {   
                     "title": "Hats",
-                    "route": "/hats"
+                    "route": "/hats",
+                    "key": 2
                 },
                 {   
                     "title": "Footwear",
-                    "route": "/footwear"
+                    "route": "/footwear",
+                    "key": 3
                 },
                 {
                     "title": "Tops", 
-                    "route": "/tops"
+                    "route": "/tops",
+                    "key": 4
                 },
                 {
                     "title": "Pants", 
-                    "route": "/pants"
+                    "route": "/pants",
+                    "key": 5
                 }
             ]
         }    
@@ -38,10 +43,11 @@ render(){
                     <li className="menu-bar">
                     {/* {post.title}, */}
                     <Link to={post.route}>{post.title}</Link>
+                    <h6>{post.key}</h6>
                     </li>)
                 }
             </ul>
-        
+            
         </div>)
     }
 

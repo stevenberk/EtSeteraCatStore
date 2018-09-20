@@ -14,10 +14,10 @@ const App = () => (
     <header className="App-header">
       <h1 className="App-title">Welcome to etSetera</h1>
     </header>
-<div className="menu-and-content-container"> 
+ 
 <HashRouter>
-<div>
-    <NavBar />
+<div className="menu-and-content-container">
+  <NavBar />
   <Route exact path ="/all" component={AllMerch}/>
   <Route path ="/footwear" component={FootwearDisplay}/>
   <Route path ="/hats" component={HatsDisplay}/>
@@ -25,7 +25,7 @@ const App = () => (
   <Route path ="/pants" component={PantsDisplay}/>
 </div>
 </HashRouter>    
-</div>
+
 </div> 
 
 

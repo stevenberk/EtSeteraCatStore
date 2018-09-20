@@ -19,7 +19,7 @@
 
 .menu-and-content-container{
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: flex-start;
 }
 .menu-bar-container{
@@ -39,9 +39,17 @@
   font-family: Avenir;
   color: white;
 }
+a {
+  font-family: Avenir;
+  color: white;
+}
 
 .menu-bar:hover {
   transform: translate(2px, 2px);
+}
+
+h6 {
+  display: none;
 }
 
 .merch-container {
