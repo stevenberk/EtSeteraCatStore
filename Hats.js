@@ -1,6 +1,10 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
+import Cart from "./Cart.js";
 
+let addToCart = (post) => {
+    let clickedProduct = post;
+    console.log(clickedProduct);
+}
 class Hats extends React.Component {
     constructor(props) {
         super(props);
@@ -27,7 +31,8 @@ render(){
                 <h4>{post.description}</h4>
                 <img src={post.imageURL}/>
                 <h4>${post.price}</h4>
-                <button type="submit">Add to Cart</button>
+                <button type="submit"
+                onClick ={()=>addToCart(post)}>Add to Cart</button>
                 
               
             </div>)}

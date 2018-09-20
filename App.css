@@ -1,4 +1,4 @@
-.App-header {
+.App-header{
   background-color: #222;
   height: 100px;
   padding: 10px;
@@ -7,29 +7,24 @@
   font-size: 2em;
   text-align: center;
 }
-
-.App-title {
+.App-title{
   font-size: 1.5em;
   margin: 0%;
 }
-
-.App-intro {
+.App-intro{
   font-size: large;
 }
-
 .menu-and-content-container{
   display: flex;
   /* flex-direction: row; */
   justify-content: flex-start;
 }
-
 .menu-bar-container{
   display: flex;
   flex-direction: column;
   height: 100%;
   align-content: flex-start;
 }
-
 .menu-bar{
   height: 3em;
   width: 10em;
@@ -40,35 +35,29 @@
   font-family: Avenir;
   color: white;
 }
-
-a {
+a{
   font-family: Avenir;
   color: white;
   text-decoration:none;
 }
-
-.menu-bar:hover {
-  transform: translate(2px, 2px);
+.menu-bar:hover{
+  transform: translate(3px, 3px);
 }
-
-h6 {
+h6{
   display: none;
 }
-
-.merch-container {
+.merch-container{
   display: flex;
   flex-direction: column;
   width: 100%;
   text-align: center;
   align-items: center;
 }
-
 img{
   height: 150px;
   width: 150px;
   border: 2px solid;
 }
-
-button:hover {
+button:hover{
   transform: translate(1px, 1px);
 }

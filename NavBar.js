@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
 class NavBar extends React.Component {
     constructor(props) {
         super(props);
@@ -10,8 +9,7 @@ class NavBar extends React.Component {
                     "title": "All",
                     "route": "/all",
                     "key": 1
-                }
-                ,
+                },
                 {   
                     "title": "Hats",
                     "route": "/hats",
@@ -36,28 +34,29 @@ class NavBar extends React.Component {
                     "title": "Sox", 
                     "route": "/sox",
                     "key": 6
+                },
+                {
+                    "title": "Cart", 
+                    "route": "/cart",
+                    "key": 7
                 }
             ]
         }    
 }
-
 render(){
    return(<div> 
             <ul className="menu-bar-container">
                 {this.state.MerchArray.map(post =>
                 <Link to={post.route}>
                     <li className="menu-bar">
-                    {/* {post.title}, */}
                     {post.title}
                     <h6>{post.key}</h6>
                     </li>
-                    </Link>)
+                </Link>)
                 }
             </ul>
             
         </div>)
     }
-
 };
-
 export default NavBar;

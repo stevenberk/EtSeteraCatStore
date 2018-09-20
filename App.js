@@ -8,14 +8,19 @@ import Hats from "./Hats.js";
 import Tops from "./Tops.js";
 import Pants from "./Pants.js";
 import Sox from "./Sox.js";
+import Cart from "./Cart.js";
+
+class CartState extends React.Component{
+  
+}
+
 
 
 const App = () => (
 <div>
     <header className="App-header">
-      <h1 className="App-title">Welcome to etSetera</h1>
+      <h1 className="App-title">Welcome Tabby Tienda</h1>
     </header>
- 
 <HashRouter>
 <div className="menu-and-content-container">
   <NavBar />
@@ -25,26 +30,22 @@ const App = () => (
   <Route path ="/tops" component={TopsDisplay}/>
   <Route path ="/pants" component={PantsDisplay}/>
   <Route path ="/sox" component={SoxDisplay}/>
+  <Route path ="/cart" component={CartDisplay}/>
 </div>
-</HashRouter>    
-
+</HashRouter>   
 </div> 
-
-
 );
   
 const AllMerch = () => (
   <div className="merch-container">
   <Merch />
   </div>
-);
-
+)
 const FootwearDisplay = () => (
   <div className="merch-container">
   <Footwear />
   </div>
 )
-
 const HatsDisplay = () => (
   <div className="merch-container">
   <Hats />
@@ -55,7 +56,6 @@ const TopsDisplay = () => (
   <Tops />
   </div> 
 )
-
 const PantsDisplay = () => (
   <div className="merch-container">
   <Pants />
@@ -64,6 +64,11 @@ const PantsDisplay = () => (
 const SoxDisplay = () => (
   <div className="merch-container">
   <Sox />
+  </div> 
+)
+const CartDisplay = () => (
+  <div className="merch-container">
+  <Cart />
   </div> 
 )
 
