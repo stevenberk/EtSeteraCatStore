@@ -43,6 +43,7 @@ render(){
                     <li className="menu-bar">
                     {/* {post.title}, */}
                     <Link to={post.route}>{post.title}</Link>
+                    
                     <h6>{post.key}</h6>
                     </li>)
                 }

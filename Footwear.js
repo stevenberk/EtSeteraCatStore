@@ -26,6 +26,7 @@ render(){
                 <h4>{post.description}</h4>
                 <img src={post.imageURL}/>
                 <h4>${post.price}</h4>
+                <button type="submit">Add to Cart</button>
                 
               
             </div>)}

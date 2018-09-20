@@ -12,7 +12,8 @@ class Tops extends React.Component {
                     "description":"Wear your cat in style, rain or shine.",
                     "price":30,
                     "imageURL":"https://images.unsplash.com/photo-1503386435953-66943ba30817",
-                    "categoryId":"3"
+                    "categoryId":"3",
+                    "key": 1
                     //tops
                 }
             ]
@@ -26,6 +27,7 @@ render(){
                 <h4>{post.description}</h4>
                 <img src={post.imageURL}/>
                 <h4>${post.price}</h4>
+                <button type="submit">Add to Cart</button>
                 
               
             </div>)}
