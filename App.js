@@ -7,6 +7,7 @@ import NavBar from './NavBar.js';
 import Hats from "./Hats.js";
 import Tops from "./Tops.js";
 import Pants from "./Pants.js";
+import Sox from "./Sox.js";
 
 
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
   <Route path ="/hats" component={HatsDisplay}/>
   <Route path ="/tops" component={TopsDisplay}/>
   <Route path ="/pants" component={PantsDisplay}/>
+  <Route path ="/sox" component={SoxDisplay}/>
 </div>
 </HashRouter>    
 
@@ -57,6 +59,11 @@ const TopsDisplay = () => (
 const PantsDisplay = () => (
   <div className="merch-container">
   <Pants />
+  </div> 
+)
+const SoxDisplay = () => (
+  <div className="merch-container">
+  <Sox />
   </div> 
 )
 
