@@ -16,14 +16,14 @@
 }
 .menu-and-content-container{
   display: flex;
-  /* flex-direction: row; */
-  justify-content: flex-start;
+ flex-direction: row;
+  
+  flex-wrap: wrap;
 }
 .menu-bar-container{
   display: flex;
   flex-direction: column;
-  height: 100%;
-  align-content: flex-start;
+  flex-wrap: wrap;
 }
 .menu-bar{
   height: 3em;
@@ -48,8 +48,12 @@ h6{
 }
 .merch-container{
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-wrap: wrap;
+  flex-wrap: inherit;
+  flex-direction: row;
+}
+.merch{
+  flex-direction: row;
   text-align: center;
   align-items: center;
 }

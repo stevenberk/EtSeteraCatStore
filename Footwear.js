@@ -29,12 +29,11 @@ render(){
             <div>
                 <h2>{post.title}</h2>
                 <h4>{post.description}</h4>
-                <img src={post.imageURL}/>
+                <img src={post.imageURL} alt=""/>
                 <h4>${post.price}</h4>
-                <button type="submit"
-                onClick ={()=>addToCart(post, this.props.dispatch)}>Add to Cart</button>
-                
-              
+                <button type="submit" onClick ={()=>addToCart(post, this.props.dispatch)}>
+                    Add to Cart
+                </button>
             </div>)}
         </div>
     }

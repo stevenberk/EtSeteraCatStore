@@ -53,15 +53,27 @@ class Merch extends React.Component {
                     //pants
                 }
             ]
-        }    
+        }  
+        let getContent = () =>{
+            // API to an array
+          return fetch('http://0.tcp.ngrok.io:18732/product')
+          .then(res => res.json())
+          .then(products => {
+              this.setState({
+                  MerchArray: products
+              })
+          }
+          )
+        }
+        getContent();  
 }
 
 render(){
    return<div> {this.state.MerchArray.map(post =>
-            <div className="merch-container">
+            <div className="merch">
                 <h2>{post.title}</h2>
                 <h4>{post.description}</h4>
-                <img src={post.imageURL}/>
+                <img src={post.imageURL} alt=""/>
                 <h4>${post.price}</h4>
                 <button type="submit"
                 onClick ={()=>addToCart(post, this.props.dispatch)}>Add to Cart</button>

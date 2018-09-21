@@ -55,7 +55,6 @@ render(){
                 </Link>)
                 }
             </ul>
-            
         </div>)
     }
 };

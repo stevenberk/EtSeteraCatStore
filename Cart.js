@@ -5,18 +5,25 @@ class Cart extends React.Component {
         this.state = {
             CartArray : [
                 {
-                    "title" : "your cart is empty"
+                    "id": "",
+                    "title":"",
+                    "description":"",
+                    "price": "",
+                    "imageURL":"",
+                    "categoryId":"",
+                    "key": 4
                 }
             ]
         }    
 }
-// props.match.params.id
 render(){
-   return<div> {this.state.CartArray.map(post =>
+   return<div> <h3>Your cart is empty</h3>
+            {this.state.CartArray.map(post =>
             <div >
                 <h2>{post.title}</h2>  
             </div>)}
         </div>
     }
 };
+
 export default Cart;

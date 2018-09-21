@@ -13,57 +13,61 @@ import Cart from "./Cart.js";
 
 const App = () => (
 <div>
-    <header className="App-header">
-      <h1 className="App-title">Welcome Tabby Tienda</h1>
-    </header>
-<HashRouter>
-<div className="menu-and-content-container">
-  <NavBar />
-  <Route exact path ="/all" component={AllMerch}/>
-  <Route path ="/footwear" component={FootwearDisplay}/>
-  <Route path ="/hats" component={HatsDisplay}/>
-  <Route path ="/tops" component={TopsDisplay}/>
-  <Route path ="/pants" component={PantsDisplay}/>
-  <Route path ="/sox" component={SoxDisplay}/>
-  <Route path ="/cart" component={CartDisplay}/>
-</div>
-</HashRouter>   
+  <header className="App-header">
+    <h1 className="App-title">Cat store</h1>
+  </header>
+  <div className="menu-and-content-container">
+    <HashRouter>
+      <div >
+        <NavBar />
+        <div className="merch-container">
+          <Route exact path ="/all" component={AllMerch}/>
+          <Route path ="/footwear" component={FootwearDisplay}/>
+          <Route path ="/hats" component={HatsDisplay}/>
+          <Route path ="/tops" component={TopsDisplay}/>
+          <Route path ="/pants" component={PantsDisplay}/>
+          <Route path ="/sox" component={SoxDisplay}/>
+          <Route path ="/cart" component={CartDisplay}/>
+        </div>
+      </div>
+    </HashRouter>  
+  </div> 
 </div> 
 );
   
 const AllMerch = () => (
-  <div className="merch-container">
-  <Merch />
+  <div className="merch">
+    <Merch />
   </div>
 )
 const FootwearDisplay = () => (
-  <div className="merch-container">
-  <Footwear />
+  <div className="merch">
+    <Footwear />
   </div>
 )
 const HatsDisplay = () => (
-  <div className="merch-container">
-  <Hats />
+  <div className="merch">
+    <Hats />
   </div> 
 )
 const TopsDisplay = () => (
-  <div className="merch-container">
-  <Tops />
+  <div className="merch">
+    <Tops />
   </div> 
 )
 const PantsDisplay = () => (
-  <div className="merch-container">
-  <Pants />
+  <div className="merch">
+    <Pants />
   </div> 
 )
 const SoxDisplay = () => (
-  <div className="merch-container">
-  <Sox />
+  <div className="merch">
+    <Sox />
   </div> 
 )
 const CartDisplay = () => (
-  <div className="merch-container">
-  <Cart />
+  <div className="merch">
+    <Cart />
   </div> 
 )
 
